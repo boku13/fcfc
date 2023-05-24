@@ -34,8 +34,8 @@ export default function Home() {
 <section class="text-gray-400 bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4">Smoothen Your Application Process</h1>
-      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-400 text-opacity-80">With fcfc you don't have to deal with the hassle of looking for a million different websites to convert the file formats of your documents
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-orange-400 mb-4">Smoothen Your Application Process</h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-400 text-opacity-80">With fcfc you dont have to deal with the hassle of looking for a million different websites to convert the file formats of your documents
        and compress them to fit the requirements. Nor do you have to worry about the potential leakage of your important documents. fcfc acts as an all in one which can convert, compress and store your documents safely for you and let you finish 
        your applications in a click. Just like that!</p>
       <div class="flex mt-6 justify-center">
@@ -50,7 +50,7 @@ export default function Home() {
               </svg>
         </div>
         <div class="flex-grow">
-          <h2 class="text-white text-lg title-font font-medium mb-3">Converter</h2>
+          <h2 class="text-orange-400 text-lg title-font font-medium mb-3">Converter</h2>
           <p class="leading-relaxed text-base">Convert your image files to pdf format.</p>
           <Link href="/converter" class="mt-3 text-red-400 inline-flex items-center">Convert Your Files!
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@ export default function Home() {
           </svg>
         </div>
         <div class="flex-grow">
-          <h2 class="text-white text-lg title-font font-medium mb-3">Compressor</h2>
+          <h2 class="text-orange-400 text-lg title-font font-medium mb-3">Compressor</h2>
           <p class="leading-relaxed text-base">Compress your converted files to fit the required file size.</p>
           <Link href="/compression" class="mt-3 text-red-400 inline-flex items-center">Compress Your Files!
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -85,7 +85,7 @@ export default function Home() {
 
         </div>
         <div class="flex-grow">
-          <h2 class="text-white text-lg title-font font-medium mb-3">Cold-Safe</h2>
+          <h2 class="text-orange-400 text-lg title-font font-medium mb-3">Cold-Safe</h2>
           <p class="leading-relaxed text-base">Store your documents in the a safe!</p>
           <Link href="/coldsafe" class="mt-3 text-red-400 inline-flex items-center">Store Your Documents!
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">

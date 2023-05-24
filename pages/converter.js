@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Conversion from './conversion';
 import { signIn, signOut, useSession } from 'next-auth/react';
 
-export default function convertfromimg() {
+export default function Convertfromimg() {
   const [imageFile, setImageFile] = useState(null);
 
   const handleImageChange = (event) => {
@@ -34,9 +34,8 @@ export default function convertfromimg() {
     </button>
   </div>
 </header>
-    <h1 className="text-xl font-bold mb-8 text-orange-400">Pick the file format you want to convert from and to.</h1>
-    
-    <div className="flex items-center">
+    <h1 className="flex-col text-center text-xl font-bold mb-8 text-orange-400">Pick the file format you want to convert from and to.</h1>
+    <div className="flex flex-col items-center">
       <input
         type="file"
         accept="image/*"
@@ -46,9 +45,8 @@ export default function convertfromimg() {
       />
       <label
         htmlFor="file-input"
-        className="px-6 py-2 bg-orange-400 text-white font-semibold rounded cursor-pointer transition-colors duration-300 hover:bg-blue-600"
-      >
-        Select Image
+        className="px-6 py-2 bg-orange-400 text-white font-semibold rounded cursor-pointer transition-colors duration-300 hover:bg-blue-600">
+        Select File
       </label>
     </div>
     {imageFile && <Conversion imageFile={imageFile} />}
