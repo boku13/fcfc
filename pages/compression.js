@@ -61,6 +61,18 @@
 //     throw error;
 //   }
 // }
+import React from 'react';
+
+const ImageComponent = () => {
+  return (
+    <div>
+      <h1>Image Component</h1>
+      <img src="https://files.catbox.moe/l1te6h.png" alt="Description of the image" />
+    </div>
+  );
+};
+
+export default ImageComponent;
 
 
 
