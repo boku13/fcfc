@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import {}
 import { saveAs } from 'file-saver';
 
 export default function Conversion({ imageFile }) {
