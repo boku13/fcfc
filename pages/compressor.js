@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import compressPDF from './compression.js';
 
-export default function PDFCompressor() {
+const Compressor = () => {
   const [selectedFile, setSelectedFile] = useState(null);
-  const [compressionPercentage, setCompressionPercentage] = useState(0);
+  const [compressionRate, setCompressionRate] = useState(0);
   const [compressedFile, setCompressedFile] = useState(null);
 
   const handleFileChange = (event) => {
@@ -11,9 +11,9 @@ export default function PDFCompressor() {
     setSelectedFile(file);
   };
 
-  const handleCompressionChange = (event) => {
-    const percentage = parseInt(event.target.value, 10);
-    setCompressionPercentage(percentage);
+  const handleCompressionRateChange = (event) => {
+    const rate = parseInt(event.target.value, 10);
+    setCompressionRate(rate);
   };
 
   const handleCompression = async () => {
@@ -23,16 +23,23 @@ export default function PDFCompressor() {
         return;
       }
 
-      const { name, type } = selectedFile;
-      const { fileName, fileUrl } = await compressPDF(selectedFile, compressionPercentage);
-      setCompressedFile({ name: fileName, url: fileUrl, type });
+      const compressedData = await compressPDF(selectedFile, compressionRate);
+      setCompressedFile(compressedData);
 
       // Reset the form
       setSelectedFile(null);
-      setCompressionPercentage(0);
+      setCompressionRate(0);
     } catch (error) {
       console.error('Error compressing PDF:', error);
     }
+  };
+
+  const handleDownload = () => {
+    const { fileName, fileUrl } = compressedFile;
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    link.click();
   };
 
   return (
@@ -41,8 +48,8 @@ export default function PDFCompressor() {
       <input type="file" accept=".pdf" onChange={handleFileChange} />
 
       <div>
-        <label htmlFor="compressionPercentage">Compression Percentage:</label>
-        <select id="compressionPercentage" value={compressionPercentage} onChange={handleCompressionChange}>
+        <label htmlFor="compressionRate">Compression Rate:</label>
+        <select id="compressionRate" value={compressionRate} onChange={handleCompressionRateChange}>
           <option value="0">No Compression</option>
           <option value="25">25%</option>
           <option value="50">50%</option>
@@ -56,13 +63,16 @@ export default function PDFCompressor() {
       {compressedFile && (
         <div>
           <h3>Compressed File:</h3>
-          <p>Filename: {compressedFile.name}</p>
-          <p>Type: {compressedFile.type}</p>
-          <a href={compressedFile.url} download={compressedFile.name}>
-            Download Compressed PDF
-          </a>
+          <p>Filename: {compressedFile.fileName}</p>
+          <button onClick={handleDownload}>Download Compressed PDF</button>
         </div>
       )}
     </div>
   );
-}
+};
+
+export default Compressor;
+
+
+
+
