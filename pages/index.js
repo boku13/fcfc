@@ -11,9 +11,9 @@ export default function Home() {
 
   return (
     <div>
-    <header class="text-gray-400 bg-gray-900 body-font">
+    <header class="text-gray-400 bg-white body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <Link href="/" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+    <Link href="/" class="flex title-font font-medium items-center text-gray-400 mb-4 md:mb-0">
     <svg class="h-24 w-24" viewBox="0 0 512 512">
   <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Verdana" font-size="100" fill="orange">fcfc</text>
      </svg>
@@ -31,7 +31,7 @@ export default function Home() {
     </button>
   </div>
 </header>
-<section class="text-gray-400 bg-gray-900 body-font">
+<section class="text-gray-400 bg-white body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
       <h1 class="sm:text-3xl text-2xl font-medium title-font text-orange-400 mb-4">Smoothen Your Application Process</h1>
