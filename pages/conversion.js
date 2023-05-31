@@ -40,17 +40,18 @@ export default function Conversion({ imageFile }) {
   };
 
   return (
-    <div flex flex-col items-center>
+    <div class='flex flex-col items-center'>
       {conversionStatus === 'converting' && <p>Converting...</p>}
       {conversionStatus === 'success' && (
         <div>
-          <p >Conversion successful!</p>
+        <br />
+          <p class='font-bold text-xl mb-8 text-orange-400'>Conversion was successful!!</p>
           <div class="px-2 py-4">
         <div class="grid gap-8 items-start justify-start">
      <div class="relative group">
-      <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-      <button onClick={handleDownloadPdf} class="relative px-7 py-4 bg-black rounded-lg leading-none">
-        <span class="text-indigo-400 group-hover:text-gray-100 transition duration-200">Download PDF</span>
+      <div class="rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+      <button onClick={handleDownloadPdf} class="px-4 py-2 bg-orange-600 text-white text-4xl font-semibold font-sans rounded cursor-pointer hover:bg-black">
+        <span class="">Download PDF</span>
          </button>
          </div>
         </div>
