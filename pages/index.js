@@ -18,14 +18,14 @@ export default function Home() {
     <svg class="h-24 w-24" viewBox="0 0 512 512">
   <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Verdana" font-size="100" fill="orange">fcfc</text>
      </svg>
-      <span class="ml-3 text-xl font-mono font-extrabold">File Compressor and File Converter</span>
+      <span class="ml-3 text-2xl text-orange-400">FileCompressorFileCompiler</span>
     </Link>
     <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
       <Link href="/aboutus" class="mr-5 hover:text-white">About Us</Link>
       <Link href="/youraccount" class="mr-5 hover:text-white">Your Account</Link>
       {/* <a class="mr-5 hover:text-white">Cold-Locker</a> */}
     </nav>
-    <button onClick={()=> signOut()} class="inline-flex items-center bg-[#062775] border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Sign Out
+    <button onClick={()=> signOut()} class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Sign Out
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
@@ -35,24 +35,24 @@ export default function Home() {
 <section class="text-white bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
-      <h1 class=" text-3xl font-medium title-font font-sans text-orange-600 mb-4">Smoothen Your Application Process</h1>
+      <h1 class=" text-3xl font-medium title-font font-sans text-orange-400 mb-4">Smoothen Your Application Process</h1>
       <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-white text-opacity-80">With fcfc you dont have to deal with the hassle of looking for a million different websites to convert the file formats of your documents
      to fit your requirements. You can convert and merge different documents with </p>
       <div class="flex mt-6 justify-center">
-        <div class="w-64 h-1 rounded-full bg-red-500 inline-flex"></div>
+        <div class="w-64 h-1 rounded-full bg-black inline-flex"></div>
       </div>
     </div>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 ">
       <div class="p-4 md:w-1/2 flex flex-col text-center items-center ">
-        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#062775] text-red-400 mb-5 flex-shrink-0">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-red-400 mb-5 flex-shrink-0">
         <svg class="h-20 w-20 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
         </div>
         <div class="flex-grow">
-          <h2 class="text-orange-600 text-lg title-font font-medium mb-3 font-mono">Converter</h2>
+          <h2 class="text-orange-400 text-2xl title-font font-medium mb-3 font-mono">Converter</h2>
           <p class="leading-relaxed text-base">Convert your image/document/text files to pdf format.</p>
-          <Link href="/converter" class="mt-3 text-red-400 inline-flex items-center">Convert Your Files!
+          <Link href="/converter" class="mt-3 text-lg text-orange-400 inline-flex items-center">Convert Your Files!
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -78,16 +78,16 @@ export default function Home() {
         </div>
       </div> */}
       <div class="p-4 md:w-1/2 flex flex-col text-center items-center">
-        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#062775] text-red-400 mb-5 flex-shrink-0">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-red-400 mb-5 flex-shrink-0">
         <svg class="w-12 h-12 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
   <path d="M12 2C6.48 2 2 6.48 2 12v5h5v2h10v-2h5v-5c0-5.52-4.48-10-10-10zm0 18c-1.66 0-3-1.34-3-3h6c0 1.66-1.34 3-3 3zm5-7h-2v-2h2v2zm0-4h-2V7h2v2z" />
 </svg>
 
         </div>
         <div class="flex-grow">
-          <h2 class="text-orange-600 text-lg title-font font-medium mb-3 font-mono">Compiler</h2>
-          <p class="leading-relaxed text-base">Merge your documents into!</p>
-          <Link href="/merger" class="mt-3 text-red-400 inline-flex items-center">Pdf Merger!
+          <h2 class="text-orange-400 text-2xl title-font font-medium mb-3 font-mono">Compiler</h2>
+          <p class="leading-relaxed text-base">Merge multiple documents into one pdf file!</p>
+          <Link href="/merger" class="mt-3 text-lg text-orange-400 inline-flex items-center">Pdf Merger!
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
