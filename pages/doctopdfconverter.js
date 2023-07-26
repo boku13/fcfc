@@ -67,7 +67,7 @@ export default function DocxToPDFConverter() {
   </div>
 </header>
     <div class='flex flex-col items-center'>
-      <h1 className='flex-col text-center text-2xl font-bold mb-8 text-orange-400'>DOCX file to PDF Converter</h1>
+      <h1 className='flex-col text-center text-2xl font-bold mb-8 text-orange-400'>Pick the docx file you want to convert to a pdf</h1>
       <form>
         <input type="file" ref={fileInputRef} accept=".docx" required />
         <br />

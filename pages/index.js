@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div>
-    <header class="text-gray-200 bg-[#062775]  body-font">
+    <header class="text-gray-200 bg-gray-900  body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <Link href="/" class="flex title-font font-medium items-center text-orange-600 mb-4 md:mb-0">
     <svg class="h-24 w-24" viewBox="0 0 512 512">
@@ -32,7 +32,7 @@ export default function Home() {
     </button>
   </div>
 </header>
-<section class="text-white bg-[#4666b3] body-font">
+<section class="text-white bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
       <h1 class=" text-3xl font-medium title-font font-sans text-orange-600 mb-4">Smoothen Your Application Process</h1>

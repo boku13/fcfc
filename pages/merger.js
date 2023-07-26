@@ -88,7 +88,7 @@ export default function MergePDFs() {
       {mergedPDF && (
         <div>
           <h2 >Merged PDF</h2>
-          <button onClick={downloadMergedPDF}>Download</button>
+          <button class='px-4 py-2 bg-orange-600 text-white text-4xl font-semibold font-sans rounded cursor-pointer transition-colors duration-300 hover:bg-black' onClick={downloadMergedPDF}>Download</button>
         </div>
       )}
     </div>
