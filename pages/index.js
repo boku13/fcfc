@@ -18,7 +18,7 @@ export default function Home() {
     <svg class="h-24 w-24" viewBox="0 0 512 512">
   <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Verdana" font-size="100" fill="orange">fcfc</text>
      </svg>
-      <span class="ml-3 text-2xl text-orange-400">FileCompressorFileCompiler</span>
+      <span class="ml-3 text-2xl text-orange-400">FileConvertorFileCompiler</span>
     </Link>
     <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
       <Link href="/aboutus" class="mr-5 hover:text-white">About Us</Link>
